@@ -1,0 +1,206 @@
+/* Fonts */
+@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Sofia Pro', sans-serif;                                      
+}
+
+.desktop {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003333;
+    padding: 1rem;
+}
+
+.logo a{
+    color: white;
+    font-weight: 900;               
+    text-decoration: none;
+}
+
+header .menu {
+    width: 20px;
+    height: 11px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'top top'
+    'bottom bottom'
+    ;
+    grid-gap: 2px;
+}
+
+.menu .top-bar {
+    grid-area: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .bottom-bar {
+    grid-area: bottom;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu span {
+    background-color: white;
+    height: 7px;
+    width: 7px;
+    color: red;
+    border-radius: 2px;
+}
+
+.nav-btn input[type='button'] {
+    background-color: white;
+    padding: .4rem 1rem;
+    font-weight: 900;               
+    color: #003333;   
+    border: none;
+    border-radius: 4px;   
+}
+
+
+/* Home */
+
+.emergency-text {
+    color: #3D6666;
+    width: 60%;
+    margin: 2rem 1rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+
+/* Register */
+.emoji {
+    margin: 1.5rem 1rem;
+    border: 2px solid #EDEDED;
+    border-radius: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+}
+
+div.register-text {
+    margin-left: 1rem;
+    width: 60%;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+div.register-text a {
+    text-decoration: none;
+    color: #0F4848;
+}
+
+#register-form {
+    margin-top: 3rem;
+}
+.mini-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 1rem;
+}
+
+.mini-input i {
+    margin-left: -1.2rem;
+}
+
+
+.input-before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 30px;
+    background-color: #C4C4C4;
+}
+
+#register-form input{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding-left: 1.5rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    border-bottom: 2.5px solid  #F5F5F5;
+    ;
+    width: 90%;
+    /* color: rgba(18, 18, 18, 0.16); */
+}
+
+#register-form input[type='submit']{
+    background-color: #0F484866;
+    color: white;
+    padding: .9rem 0;
+    border-radius: 8px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.social-media span {
+    font-weight: 600;
+}
+
+.social-media-icons {
+    width: 60%;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.facebook, .google {
+    border: 2px solid #EDEDED;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+/* Login Styles */
+
+.forgot-pwd a {
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-end;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+/* Reset Password */
+
+div.pwd-reset {
+    width: 90%;
+}
+
+@media (min-width:430px) {
+    main {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        color: #003333;
+        justify-content: center;
+        align-items: center;
+        height: 40rem;
+    }
+}
