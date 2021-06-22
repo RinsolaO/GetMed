@@ -145,11 +145,11 @@ div.register-text a {
 }
 
 #register-form input[type='submit']{
-    background-color: #0F484866;
+    background-color: #003333;
+    opacity: .8;
     color: white;
-    padding: .9rem 0;
+    padding: 1.5rem 0;
     border-radius: 2px;
-    height: 50px;
 }
 
 .social-media {
